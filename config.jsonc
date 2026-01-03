@@ -1,0 +1,116 @@
+{
+    "layer": "top",
+    "position": "top",
+    //"margin-top": 10,
+    //"width": 1890,
+    "output": ["DP-1","DP-2"],
+
+    
+    "modules-left": [
+        "sway/workspaces",
+        "sway/mode"
+        
+    ],
+    "modules-center": [
+        "cpu",
+        "clock",
+        "memory"
+    ],
+    "modules-right": [
+        "sway/language",
+        "pulseaudio",
+        "tray",
+        "custom/power"
+    ],
+
+    "sway/window": {
+       "max-length": 50
+    },
+    "clock": {
+        "format": "{:%I:%M %p}",
+        "format-alt": "{:%a, %d. %b  %I:%M %p}",
+        "tooltip-format": "<tt><small>{calendar}</small></tt>",
+        "calendar": {
+            "mode": "year",
+            "mode-mon-col": 3,
+           // "weeks-pos": "right",
+            "on-scroll": 1,
+            "format": {
+                "months": "<span color='#5e81ac'><b>{}</b></span>",
+                "days": "<span color='#81a1c1'><b>{}</b></span>",
+                "weeks": "<span color='#88c0d0'><b>W{}</b></span>",
+                "weekdays": "<span color='#8fbcbb'><b>{}</b></span>",
+                "today": "<span color='#bf616a'><b><u>{}</u></b></span>"
+            }
+        },
+        "actions": {
+            "on-click-right": "mode",
+            "on-scroll-up": "tz_up",
+            "on-scroll-down": "tz_down",
+            "on-scroll-up": "shift_up",
+            "on-scroll-down": "shift_down"
+        }
+    },
+    "pulseaudio": {
+        "format": "{volume}%",
+        "format-bluetooth": "{volume}% {icon}",
+        "format-muted": "󰟎",
+        "format-icons": {
+            "alsa_output.pci-0000_00_1f.3.analog-stereo": "",
+            "alsa_output.pci-0000_00_1f.3.analog-stereo-muted": "",
+            "headphone": "",
+            "default": ["",""]
+        },
+        "scroll-step": 1,
+        "on-click": "pavucontrol",
+        "ignored-sinks": [
+            "Easy Effects Sink"
+        ]
+    },
+    "memory": {
+        "interval": 10,
+        "format": "{}% ",
+        "max-length": 10
+    },
+    "cpu": {
+        "interval": 10,
+        "format": "{usage}% ",
+        "max-length": 10
+    },
+    "custom/power": {
+        "format": "⏻",
+        "on-click": "wlogout",
+        "tooltrip": false
+    },
+    "tray": {
+        "spacing": 10
+    },
+       
+    "sway/workspaces": {
+        "format": "{icon}",
+        "format-icons": {
+        "focused": "",
+        "default": ""
+
+    },  
+    "persistent-workspaces": {
+        "1" :["DP-1"],
+        "2" :["DP-1"],
+        "3" :["DP-1"],
+        "4" :["DP-1"],
+        "5" :["DP-1"],
+        "6" :["DP-2"],
+        "7" :["DP-2"],
+        "8" :["DP-2"],
+        "9" :["DP-2"]
+    } 
+    },
+    "sway/language": {
+    "format": "{}",
+    "on-click": "swaymsg input type:keyboard xkb_switch_layout next"
+    }
+    
+
+
+
+}
