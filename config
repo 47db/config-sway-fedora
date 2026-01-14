@@ -1,6 +1,6 @@
 
 #--------------------------------------------------- 
-############## DIEX SWAY CONFIG ####################
+############## SWAY CONFIG ####################
 #---------------------------------------------------
 #
 #
@@ -128,7 +128,7 @@ default_border pixel 2
 #client.urgent             #D4D9E2 #3A4A57 #D4D9E2 #D4D9E2 #3A4A57
 #client.placeholder        #3A4A57 #A8B8C8 #A8B8C8 #3A4A57 #A8B8C8
 
-#DIEX nordic
+#nordic
 #client.focused            #EEF2F6 #EEF2F6 #EEF2F6 #EEF2F6 #EEF2F6
 #client.unfocused          #B2C4D7 #B2C4D7 #B2C4D7 #B2C4D7 #B2C4D7
 
@@ -290,11 +290,11 @@ exec export XKB_CONFIG_ROOT=/usr/share/X11/xkb
     bindsym $mod+d exec fuzzel show menu
    
     # Start file manager thunar
-    bindsym $mod+Shift+f exec kitty --class yazifile -e bash -lc "/home/diex/yazifile.sh"
+    bindsym $mod+Shift+f exec kitty --class yazifile -e bash -lc "/home/user/yazifile.sh"
 
    
     # Start slurp screenshot tool
-    #bindsym $mod+Shift+s exec grim -g "$(slurp)" /home/diex/Pictures/screenshot-$(date +%s).png
+    #bindsym $mod+Shift+s exec grim -g "$(slurp)" /home/user/Pictures/screenshot-$(date +%s).png
     bindsym $mod+Shift+s exec grim -g "$(slurp)" - | wl-copy
     # Start emacs
     bindsym $mod+Shift+e exec emacs
@@ -487,12 +487,12 @@ exec autotiling -l 9
 
 #setwall.sh
 
-    bindsym $mod+Shift+t exec kitty --class setwall -e zsh -ic "/home/diex/setwall-yazi.sh; exec zsh"
+    bindsym $mod+Shift+t exec kitty --class setwall -e zsh -ic "/home/user/setwall-yazi.sh; exec zsh"
     for_window [app_id="setwall"] floating enable, move position center, resize set width 1200 px height 600 px
 
 #info system by fastfech + anifetch super+i
 
-    bindsym $mod+i exec alacritty --class infosys -e bash -lc "/home/diex/infosys.sh"
+    bindsym $mod+i exec alacritty --class infosys -e bash -lc "/home/user/infosys.sh"
     for_window [app_id="infosys"] floating enable, move position center, resize set width 760 px height 390 px
 
 #Ai web app shortcut
@@ -514,10 +514,6 @@ exec autotiling -l 9
 
     for_window [app_id="yazifile"] floating enable, move position center, resize set width 1200 px height 600 px
 
-#music player sh
-
-    bindsym $mod+Shift+m exec alacritty --class diexplayer -e zsh -ic "/home/diex/mymusicp.sh; exec zsh"
-    for_window [app_id="diexplayer"] floating enable, move position center, resize set width 1000 px height 600 px
 
 
 #polkit
