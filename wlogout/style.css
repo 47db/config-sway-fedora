@@ -34,25 +34,25 @@ button:focus, button:active, button:hover {
 }
 
 #lock {
-    background-image: image(url("/home/user/Desktop/lock.png"), url("/home/diex/Desktop/lock.png"));
+    background-image: image(url("/home/user/Desktop/lock.png"), url("/home/user/Desktop/lock.png"));
 }
 
 #logout {
-    background-image: image(url("/home/user/Desktop/logout.png"), url("/home/diex/Desktop/logout.png"));
+    background-image: image(url("/home/user/Desktop/logout.png"), url("/home/user/Desktop/logout.png"));
 }
 
 #suspend {
-    background-image: image(url("/home/user/Desktop/suspend.png"), url("/home/diex/Desktop/suspend.png"));
+    background-image: image(url("/home/user/Desktop/suspend.png"), url("/home/user/Desktop/suspend.png"));
 }
 
 #hibernate {
-    background-image: image(url("/home/user/Desktop/hibernate.png"), url("/home/diex/Desktop/hibernate.png"));
+    background-image: image(url("/home/user/Desktop/hibernate.png"), url("/home/user/Desktop/hibernate.png"));
 }
 
 #shutdown {
-    background-image: image(url("/home/user/Desktop/shutdown.png"), url("/home/diex/Desktop/shutdown.png"));
+    background-image: image(url("/home/user/Desktop/shutdown.png"), url("/home/user/Desktop/shutdown.png"));
 }
 
 #reboot {
-    background-image: image(url("/home/user/Desktop/reboot.png"), url("/home/diex/Desktop/reboot.png"));
+    background-image: image(url("/home/user/Desktop/reboot.png"), url("/home/user/Desktop/reboot.png"));
 }
