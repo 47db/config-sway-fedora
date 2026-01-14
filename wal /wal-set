@@ -5,5 +5,5 @@ swaybg -i "$(< ~/.cache/wal/wal)" -m fill &
 #    cp "$HOME/.config/wal/fuzzel.ini" "$HOME/.config/fuzzel/fuzzel.ini"
 #fi
 #!/bin/bash
-/home/diex/.config/wal/wal-fuzzel.sh
-/home/diex/.config/wal/wal-dunst.sh
+/home/user/.config/wal/wal-fuzzel.sh
+/home/user/.config/wal/wal-dunst.sh
