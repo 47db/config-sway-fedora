@@ -61,7 +61,8 @@ set $menu $rofi_cmd -show combi -combi-modes drun#run -modes combi
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
 # Requires: desktop-backgrounds-compat, swaybg, jxl-pixbuf-loader
-#output * bg /home/user/Downloads/1.png fill
+# Set wallpaper (initial)
+#output * bg /home/user/Downloads/2.png fill
 
 # Load Pywal colors
 include ~/.cache/wal/colors-sway
@@ -240,7 +241,7 @@ exec_always {
 
 
 #For Cursor
-seat seat0 xcursor_theme Bibata-Original-Classic 24
+seat seat0 xcursor_theme Adwaita 24
 
 
 # This forces the icon theme to load before Wofi
