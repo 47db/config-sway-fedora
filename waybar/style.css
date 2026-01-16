@@ -1,7 +1,6 @@
-
 * {
     border: none;
-    font-family: 'FiraCode Nerd Font', 'Font Awesome 6 Free', 'Font Awesome 6 Brands', monospace;
+    font-family: "GoMono Nerd Font Mono", "JetBrainsMono Nerd Font Propo";
     font-size: 15px;
 
 
@@ -67,24 +66,28 @@ window#waybar {
     font-size: 25px;
     font-weight: 900;
     border-radius: 50px;
-    color: #FFE3B5
+    color: white
 }
 
 #custom-power,
 #pulseaudio,
 #tray,
+#custom-audio-toggle,
+#mpd,
 #language {
 
     font-weight: 900;
     background: alpha(#000000, 0.3);
-    color: #FFE3B5;
+    color: whitesmoke;
     padding: 0 10px;
     margin: 0 3px;
     border-radius: 50px;
 
 }
 
-
+#custom-audio-toggle{
+    font-size: 25px;
+}
 
 #custom-power {
     font-size: 25px;
@@ -101,4 +104,3 @@ window#waybar {
     padding: 0 15px;
     min-height: 35px;
 }
-
